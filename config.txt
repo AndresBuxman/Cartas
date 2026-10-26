@@ -1,0 +1,29 @@
+# ============================================================
+#  Configuracion del juego Agua - Tierra - Fuego
+#  Formato: una directiva por linea ("clave valores").
+#  Todo lo que sigue a '#' es comentario.
+#  Si una linea es invalida se ignora y el juego avisa en la
+#  pantalla de inicio. Si falta el archivo se usan los valores
+#  por defecto.
+# ============================================================
+
+# Cantidad de elementos por jugador (1 a 16)
+cantidad_elementos 5
+
+# Tipo de IA del oponente: ALEATORIA | ESTRATEGICA | SUPERIA
+ia SUPERIA
+
+# 1 = tambien reparte elementos mixtos (Barro, Lava, Vapor); 0 = solo Agua/Tierra/Fuego
+elementos_mixtos 0
+
+# Tabla de danio (energia que quita un ataque):
+#   danio ATACANTE DEFENSOR PORCENTAJE
+danio AGUA   FUEGO  50
+danio FUEGO  AGUA   20
+danio TIERRA FUEGO  20
+danio FUEGO  TIERRA 40
+danio AGUA   TIERRA 30
+danio TIERRA AGUA   50
+danio AGUA   AGUA   15
+danio TIERRA TIERRA 15
+danio FUEGO  FUEGO  15
